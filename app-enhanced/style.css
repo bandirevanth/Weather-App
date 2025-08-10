@@ -121,7 +121,7 @@ body {
 
 .weather_condition span.condition {
   padding: 0.3rem 0.8rem; /* Add horizontal breathing room for text */
-  background: rgba(255, 255, 255, 0.15); /* Optional subtle bg */
+  background: rgba(255, 255, 255, 0.15); /* subtle bg */
   border-radius: 0.5rem;
 }
 
