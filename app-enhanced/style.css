@@ -3,6 +3,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Inter", -apple-system, BlinkMacSystemFont, sans-serif;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -49,8 +50,8 @@ body {
     0 1px 0 rgba(255, 255, 255, 0.2) inset;
   transform: translateY(0);
   transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-  max-width: 600px;
-  width: 100%;
+  max-width: 750px;
+  width: 180%;
 }
 
 .weather-card:hover {
@@ -114,6 +115,14 @@ body {
   flex-direction: column;
   align-items: center;
   gap: 1rem;
+  padding: 0.5rem 1rem; /* Add space inside */
+  border-radius: 1rem; /* Makes it feel balanced */
+}
+
+.weather_condition span.condition {
+  padding: 0.3rem 0.8rem; /* Add horizontal breathing room for text */
+  background: rgba(255, 255, 255, 0.15); /* Optional subtle bg */
+  border-radius: 0.5rem;
 }
 
 .weather-icon {
@@ -141,7 +150,7 @@ body {
 
 .weather-details {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  grid-template-columns: repeat(3, minmax(140px, 1fr));
   gap: 1.5rem;
   margin-top: 2rem;
   padding-top: 2rem;
